@@ -1,0 +1,23 @@
+py -3 -m venv venv
+source "venv/Scripts/activate"
+pip install Flask
+pip install -U flask-cors
+pip install flask-restful
+python -m pip install cx_Oracle --upgrade
+
+
+Tablas
+Personas:
+    id
+    nombre
+    apellido
+    direccion
+
+Hospital:
+    id
+    nombre
+    direccion
+
+Defuncion
+    id_persona
+    id_hospital
